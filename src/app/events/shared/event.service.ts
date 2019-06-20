@@ -5,7 +5,7 @@ export class EventService {
   indexedEvents: any[];
   constructor() {
     this.indexedEvents = EVENTS.reduce((accumulate: any, current) => {
-      return { ...accumulate, [current.id - 1]: current };
+      return { ...accumulate, [current.id]: current };
     }, {});
   }
   getEvents() {
