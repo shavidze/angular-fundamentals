@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component } from '@angular/core';
 @Component({
   template: `
     <h1 class="errorMessage">404'd</h1>
