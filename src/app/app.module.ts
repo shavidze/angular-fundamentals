@@ -7,10 +7,10 @@ import { EventThumbnailComponent } from './events/event-thumbnail.component';
 import { NavBarComponent } from '../app/nav/navbar.component';
 import { EventService } from './events/shared/event.service';
 import { ToastrService } from './common/toastr.service';
-import { EventDetailsComponent } from './events/event-details.component.ts/event-details.component';
+import { EventDetailsComponent } from './events/event-details/event-details.component';
 import { CreateEventComponent } from './events/create-event.component';
 import { Error404Component } from './errors/404.component';
-import { EventRouteActivator } from './events/event-details.component.ts/event.route-activator';
+import { EventRouteActivator } from './events/event-details/event.route-activator';
 import { appRoutes } from './routes';
 import { EventListResolver } from './events/event-list-resolver.service';
 

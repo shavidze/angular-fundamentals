@@ -1,7 +1,7 @@
-import { Component, Input, Output, EventEmitter } from "@angular/core";
-
+import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { IEvent } from './shared/event.model';
 @Component({
-  selector: "event-thumbnail",
+  selector: 'event-thumbnail',
   template: `
     <div [routerLink]="['/events', event.id]" class="well hoverwell thumbnail">
       <h2>{{ event?.name }}</h2>
@@ -40,10 +40,10 @@ import { Component, Input, Output, EventEmitter } from "@angular/core";
   ]
 })
 export class EventThumbnailComponent {
-  @Input() event: any;
+  @Input() event: IEvent;
   getStartTimeClass() {
-    if (this.event && this.event.time === "8:00 am") {
-      return ["green bold"];
+    if (this.event && this.event.time === '8:00 am') {
+      return ['green bold'];
     }
     return [];
   }
